@@ -23,23 +23,23 @@ window.onload=function(){
         if(Math.abs(e.x)>150){
             if(e.direction=="left"){
                 num++;
-                if(num==$(".imgs").length){
+                if(num>=$(".imgs").length){
                     num=$(".imgs").length-1;
                 }
             }else if(e.direction=="right"){
                 num--;
-                if(num==-1){
+                if(num<0){
                     num=0;
                 }
             }
             $(".banner").css({
                 marginLeft:-num*clientw,
-                transiton:"margin-left 2s ease"
+                transition:"margin-left 1s ease"
             })
         }else{
             $(".banner").css({
                 marginLeft:num*clientw,
-                transiton:"margin-left 2s ease"
+                transition:"margin-left 1s ease"
             })
         }
     })
