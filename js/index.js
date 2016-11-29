@@ -38,7 +38,7 @@ window.onload=function(){
             })
         }else{
             $(".banner").css({
-                marginLeft:num*clientw,
+                marginLeft:-num*clientw,
                 transition:"margin-left 1s ease"
             })
         }
